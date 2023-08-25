@@ -1,3 +1,4 @@
+'use client'
 if (typeof window !== "undefined") {
   const btn = document.getElementById("menu-btn");
   const nav = document.getElementById("menu");
