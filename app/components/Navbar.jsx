@@ -1,6 +1,6 @@
 import { links } from "../constants";
 import Image from "next/image";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/icons/logo.svg";
 import Link from "next/link";
 const Navbar = () => {
   return (

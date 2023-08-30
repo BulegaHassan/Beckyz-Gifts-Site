@@ -1,12 +1,8 @@
 import { links, otherLinks, logos } from "../constants";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../assets/logo-white.svg";
-import FBLogo from "../assets/icon-facebook.svg";
-import YTLogo from "../assets/icon-youtube.svg";
-import TWLogo from "../assets/icon-twitter.svg";
-import PINLogo from "../assets/icon-pinterest.svg";
-import INSLogo from "../assets/icon-instagram.svg";
+import Logo from "../assets/icons/logo-white.svg";
+
 
 const Footer = () => {
   return (
@@ -73,7 +69,7 @@ const Footer = () => {
           </form>
           <div className='hidden text-white md:block'>
             {" "}
-            Copyright &copy; 2022, All Rights Reserved{" "}
+            Copyright &copy; 2023, All Rights Reserved{" "}
           </div>
         </div>
       </div>
