@@ -1,6 +1,15 @@
+import Aboutsection from "../components/Aboutsection";
+import { PopularProducts } from "../components";
 const AboutPage = () => {
   return (
-    <div>About Page</div>
-  )
-}
-export default AboutPage
+    <>
+      <setion className='padding'>
+        <Aboutsection />
+      </setion>
+      <section className='padding'>
+        <PopularProducts />
+      </section>
+    </>
+  );
+};
+export default AboutPage;
