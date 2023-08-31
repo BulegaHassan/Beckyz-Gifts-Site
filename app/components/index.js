@@ -8,7 +8,9 @@ import Testimonials from "./Testimonials";
 import Services from "./Services";
 import ServicesCard from "./ServicesCard";
 import TestimonialCard from "./TestimonialCard";
-
+import ProductImage from "./ProductImage";
+import Product from "./Product";
+import Product2 from "./Product2";
 export {
   Navbar,
   Footer,
@@ -18,5 +20,8 @@ export {
   Testimonials,
   TestimonialCard,
   Services,
-  ServicesCard
+  ServicesCard,
+  ProductImage,
+  Product,
+  Product2
 };
