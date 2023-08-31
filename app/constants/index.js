@@ -27,8 +27,8 @@ export  const links = [
   },
   {
     id: "3",
-    name: "Plants",
-    href: '/plants'
+    name: "Gifts",
+    href: '/gifts'
   },
   {
     id: "4",
