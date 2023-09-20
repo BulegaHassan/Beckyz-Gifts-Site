@@ -1,6 +1,14 @@
-const ContactPage = () => {
+import { Contact,Map } from "../components"
+const contactPage = () => {
   return (
-    <div>Contact Page</div>
+    <>
+    <section className="padding pt-0 mt-0">
+      <Contact/>
+    </section>
+    <section className="">
+      <Map/>
+    </section>
+    </>
   )
 }
-export default ContactPage
+export default contactPage
