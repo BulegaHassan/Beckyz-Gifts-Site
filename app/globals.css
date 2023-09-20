@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background-image: url('./assets/images/bg-tablet-pattern.svg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 800px;
   background-position: 90% -25%;
 }
@@ -12,7 +12,7 @@ body {
 #cta {
   background-image: url('./assets/images/bg-simplify-section-desktop.svg');
   background-repeat: repeat;
-}
+} */
 .testmonial {
   @apply flex mb-5 flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3
 }
