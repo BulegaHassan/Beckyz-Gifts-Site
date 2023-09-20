@@ -8,7 +8,7 @@ const Aboutsection = () => {
         <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
           We Provide You
           <span className='text-coral-red'> Super </span>
-          <span className='text-coral-red'>Quality </span> Flowers
+          <span className='text-coral-red'>Quality </span> Gifts
         </h2>
         <p className='mt-4 lg:max-w-lg info-text'>
           An exceptional flower store offers vibrant blooms, expert guidance,
@@ -20,7 +20,7 @@ const Aboutsection = () => {
         </p>
         <div className='mt-11'>
           <button className='px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'>
-            Get Flowers{" "}
+            Our Story{" "}
           </button>
         </div>
       </div>
