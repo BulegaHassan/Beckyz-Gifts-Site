@@ -14,16 +14,21 @@ const Footer = () => {
             Copyright &copy; 2023, All Rights Reserved{" "}
           </div>
           <div>
-            <Image src={Logo} className='h-8' alt='' />
+            <Image src={Logo} className='h-8' alt='logo image' width='auto' />
           </div>
-          <div className='flex justify-center space-x-4'>            
+          <div className='flex justify-center space-x-4'>
             {logos.map((logo) => (
               <Link
                 href={logo.url}
                 key={logo.id}
                 className='hover:text-brightRed'
               >
-                <Image src={logo.logo} alt='' className='h-6' />
+                <Image
+                  src={logo.logo}
+                  alt='logo image'
+                  className='h-6'
+                  width='auto'
+                />
               </Link>
             ))}
           </div>
