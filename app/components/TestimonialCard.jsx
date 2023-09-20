@@ -4,6 +4,7 @@ const TestimonialCard = ({ url, name, role, comment }) => {
       <div className='mb-6 flex justify-center'>
         <img
           src={url}
+          alt={name}
           className='w-32 rounded-full shadow-lg dark:shadow-black/20'
         />
       </div>
