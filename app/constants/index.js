@@ -20,11 +20,7 @@ export  const links = [
     name: "Home",
     href: '/'
   },
-  {
-    id: "2",
-    name: "Flowers",
-    href: '/flowers'
-  },
+  
   {
     id: "3",
     name: "Gifts",
