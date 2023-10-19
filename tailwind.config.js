@@ -19,8 +19,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        brightRed: "hsl(12, 88%, 59%)",
-        brightRedLight: "hsl(12, 88%, 69%)",
+        brightRed: "#BF1424",
+        brightRedLight: "#DD6E77",
         brightRedSupLight: "hsl(12, 88%, 95%)",
         darkBlue: "hsl(228, 39%, 23%)",
         darkGrayishBlue: "hsl(227, 12%, 61%)",
@@ -28,7 +28,6 @@ module.exports = {
         veryPaleRed: "hsl(13, 100%, 96%)",
         veryLightGray: "hsl(0, 0%, 98%)",
         primary: "#ECEEFF",
-        "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",

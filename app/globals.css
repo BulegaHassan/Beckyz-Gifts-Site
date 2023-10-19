@@ -2,17 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-image: url('./assets/images/bg-tablet-pattern.svg');
-  background-repeat: repeat;
-  background-size: 800px;
-  background-position: 90% -25%;
-}
 
-#cta {
-  background-image: url('./assets/images/bg-simplify-section-desktop.svg');
-  background-repeat: repeat;
-} */
 .testmonial {
   @apply flex mb-5 flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3
 }
@@ -94,7 +84,7 @@
 
 @layer utilities {
   .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
+    @apply sm:px-16 px-8 sm:py-10 py-8;
   }
 
   .padding-x {
@@ -102,7 +92,7 @@
   }
 
   .padding-y {
-    @apply sm:py-24 py-12;
+    @apply sm:py-4 py-2;
   }
 
   .padding-l {
