@@ -2,37 +2,37 @@ const Aboutsection = () => {
   return (
     <section
       id='about-us'
-      className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container'
+      className='flex justify-center items-center  gap-10  max-container'
     >
-      <div className='flex flex-1 flex-col'>
+      <div className='ml-10 flex flex-1 flex-col'>
         <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
           We Provide You
-          <span className='text-coral-red'> Super </span>
-          <span className='text-coral-red'>Quality </span> Gifts
+          <span className='text-brightRed'> Super </span>
+          <span className='text-brightRed'>Quality </span> Gifts
         </h2>
         <p className='mt-4 lg:max-w-lg info-text'>
-          An exceptional flower store offers vibrant blooms, expert guidance,
+          An exceptional gifts store offers vibrant blooms, expert guidance,
           and tranquil ambiance, crafting moments of joy through nature's
-          beauty.
+          beauty and passionately crafted gifts.
         </p>
         <p className='mt-6 lg:max-w-lg info-text'>
           Our dedication to excellence ensures your satisfaction
         </p>
         <div className='mt-11'>
-          <button className='px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'>
+          <button className='px-6 py-2 text-amber-500 rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'>
             Our Story{" "}
           </button>
         </div>
       </div>
 
-      <div className='flex-1 flex justify-center items-center'>
-        <div class=''>
-          <div class='-m-1 flex flex-wrap md:-m-2'>
-            <div class='flex w-1/2 flex-wrap'>
-              <div class='w-1/2 p-1 md:p-2'>
+      <div className='mr-10 flex-1 flex justify-center items-center'>
+        <div className=''>
+          <div className='-m-1 flex flex-wrap md:-m-2'>
+            <div className='flex w-1/2 flex-wrap'>
+              <div className='w-1/2 p-1 md:p-2'>
                 <img
                   alt='gallery'
-                  class='block h-full w-full rounded-lg object-cover object-center'
+                  className='block h-full w-full rounded-lg object-cover object-center'
                   src='https://res.cloudinary.com/didlxgowc/image/upload/f_auto,c_limit,w_1920,q_auto/618e4590a0741095275917_t0fsvi.webp'
                 />
               </div>
