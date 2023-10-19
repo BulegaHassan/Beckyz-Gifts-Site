@@ -1,7 +1,7 @@
 import { links, otherLinks, logos } from "../constants";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../assets/icons/logo-white.svg";
+import Logo from "../assets/icons/becky_logo.jpeg";
 
 
 const Footer = () => {
@@ -14,19 +14,21 @@ const Footer = () => {
             Copyright &copy; 2023, All Rights Reserved{" "}
           </div>
           <div>
-            <Image src={Logo} className='h-8' alt='logo image' width='auto' />
+            <Image
+              src={Logo}
+              alt='Becky Gifts Logo'
+              width={100}
+              height='auto'
+              className='mb-3'
+            />
           </div>
-          <div className='flex justify-center space-x-4'>
+          <div className='flex justify-center space-x-4 '>
             {logos.map((logo) => (
-              <Link
-                href={logo.url}
-                key={logo.id}
-                className='hover:text-brightRed'
-              >
+              <Link href={logo.url} key={logo.id} className=''>
                 <Image
                   src={logo.logo}
                   alt='logo image'
-                  className='h-6'
+                  className='h-6 hover:fill-brightRed'
                   width='auto'
                 />
               </Link>
