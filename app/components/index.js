@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import PopularProductCard from "./PopularProductCard";
 import PopularProducts from "./PopularProducts";
 import Aboutsection from "./Aboutsection";
-import AboutContent from "./AboutCOntent";
+import AboutContent from "./AboutContent";
 import Testimonials from "./Testimonials";
 import Services from "./Services";
 import ServicesCard from "./ServicesCard";
