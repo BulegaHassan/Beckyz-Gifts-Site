@@ -7,7 +7,7 @@ const Services = () => {
       <section>
         <h3 className='font-palanquin text-center text-4xl font-bold py-9'>
           Why 
-          <span className='text-coral-red'> Choose</span>
+          <span className='text-brightRed'> Choose</span>
         {' '}  Us?
         </h3>        
       </section>

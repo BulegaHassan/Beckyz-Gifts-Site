@@ -4,7 +4,7 @@ import { ProductImage } from ".";
 const Product = ({ product }) => {
   return (
     <Link
-      href={`/flowers/${product.id}`}
+      href={`/gifts/${product.id}`}
       className='h-96 flex flex-col p-5 rounded border group hover:scale-105 transition-transform ease-out duration-200'
     >
       <div className='relative max-h-72 flex-1'>
