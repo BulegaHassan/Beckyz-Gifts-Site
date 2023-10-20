@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 
 async function ProductPage({ params: { id } }) {
   try {
-    const res = await fetch(`http://localhost:4000/gifts/${id}`);
-    const product = await res.json();
+    const res = await fetch(
+      `https://gifts-shop-and-more-api.onrender.com/api/v1/gifts/${id}`
+    );
+    let product = await res.json();
+    product = product.gift;
     return (
       <div className='max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 mt-48 pb-10'>
         <ProductImage product={product} />

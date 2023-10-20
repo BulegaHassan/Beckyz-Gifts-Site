@@ -17,8 +17,16 @@ function Modal() {
   useEffect(() => {
     async function fetchProduct() {
       setLoading(true);
-      const res = await fetch(`http://localhost:4000/gifts/${id}`);
-      const product = await res.json();
+      const res = await fetch(
+        `https://gifts-shop-and-more-api.onrender.com/api/v1/gifts/${id}`
+      );
+      // console.log("res", res);
+
+      let product = await res.json();
+      product = product.gift
+      console.log('pr', product);
+      console.log("pr-gift", product.gift);
+
 
       setProduct(product);
 
@@ -50,7 +58,7 @@ function Modal() {
               <div className='h-8 w-8 rounded-full border-2 border-dotted border-red-600 animate-spin' />
             ) : (
               <div className='flex gap-x-8 h-96'>
-                {product?.img && (
+                {product?.image && (
                   <div className='relative w-72 h-full hidden md:inline'>
                     <ProductImage product={product} fill />
                   </div>
