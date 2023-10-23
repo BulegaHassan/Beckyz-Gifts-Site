@@ -115,3 +115,30 @@
     @apply  text-slate-gray text-lg leading-7;
   }
 }
+
+/* // colors staff */
+.colors {
+    display: flex;
+    align-items: center;
+  }
+  .color-btn {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #222;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      font-size: 0.5rem;
+      /* color: var(--clr-white); */
+    }
+  }
+  .active {
+    opacity: 1;
+  }
