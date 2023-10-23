@@ -6,6 +6,7 @@ import { StarIcon as StarIconOutline } from "@heroicons/react/24/outline";
 import { StarIcon } from "@heroicons/react/24/solid";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { formatPrice } from "@/app/constants/helpers";
 
 function Modal() {
   let [isOpen, setIsOpen] = useState(true);
@@ -63,10 +64,12 @@ function Modal() {
                     <ProductImage product={product} fill />
                   </div>
                 )}
-                <div className='flex-1 flex flex-col'>
+                <div className='flex-1 flex flex-col mt-12'>
                   <div className='flex-1'>
                     <h4 className='font-semibold'>{product?.name}</h4>
-                    <p className='font-medium text-sm'>Ush {product?.price}</p>
+                    <p className='font-medium text-sm'>
+                      {formatPrice(product?.price)}
+                    </p>
 
                     <div className='flex items-center text-sm my-4'>
                       <p>{product?.rating}</p>
@@ -100,15 +103,14 @@ function Modal() {
                     <p className='line-clamp-5 text-sm'>
                       {product?.description}
                     </p>
-                  </div>
-
-                  <div className='space-y-3 text-sm'>
-                    <button
-                      onClick={() => window.location.reload()}
-                      className='button w-1/2 rounded-full bg-orange-300 border-orange-600 hover:bg-orange-600 hover:text-white hover:border-transparent'
-                    >
-                      View full details
-                    </button>
+                    <div className='text-sm mt-36'>
+                      <button
+                        onClick={() => window.location.reload()}
+                        className='px-6 py-2 text-amber-500 rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'
+                      >
+                        View Details{" "}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
