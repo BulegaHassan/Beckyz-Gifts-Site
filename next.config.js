@@ -8,6 +8,7 @@ const nextConfig = {
       "cdn1.1800flowers.com",
       "cdn2.harryanddavid.com",
       "cdn4.fruitbouquets.com",
+      "res.cloudinary.com"
     ],
   },
 };
