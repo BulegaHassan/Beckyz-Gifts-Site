@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={inter.className}
-        className='sm:bg-pink-300 md:bg-gradient-to-r from-rose-200 via-amber-200 to-rose-300'
+        // className={inter.className}
+        className=' md:bg-gradient-to-r from-rose-200 via-amber-200 to-rose-300'
       >
         <Providers>
           <Navbar />

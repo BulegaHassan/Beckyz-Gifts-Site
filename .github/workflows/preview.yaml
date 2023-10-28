@@ -7,7 +7,24 @@ on:
     branches-ignore:
       - main
 jobs:
+  Install_Lint_Test_Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install dependencies
+        run: npm install
+      - name: Check styles
+        run: npm run lint
+      - name: run tests and collect coverage.
+        run: npm run test
+      - name: build app
+        run: npm run build  
   Deploy-Preview:
+    name: Deploy Preview
+    needs: Install_Lint_Test_Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

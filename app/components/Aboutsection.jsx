@@ -12,7 +12,7 @@ const Aboutsection = () => {
         </h2>
         <p className='mt-4 lg:max-w-lg info-text'>
           An exceptional gifts store offers vibrant blooms, expert guidance,
-          and tranquil ambiance, crafting moments of joy through nature's
+          and tranquil ambiance, crafting moments of joy through 
           beauty and passionately crafted gifts.
         </p>
         <p className='mt-6 lg:max-w-lg info-text'>
