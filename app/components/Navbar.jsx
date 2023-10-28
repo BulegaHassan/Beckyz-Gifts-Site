@@ -1,14 +1,21 @@
 import { links } from "../constants";
+import { FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../assets/icons/becky_logo.jpeg";
 import Link from "next/link";
 const Navbar = () => {
   return (
-    <nav className='relative  mx-auto bg-gradient-to-r from-pink-500 to-amber-100'>
-      <div className='flex items-center justify-center gap-8'>
+    <nav className=' mx-auto bg-gradient-to-r from-pink-500 to-amber-100 sticky top-0 z-20 px-2 '>
+      <div className='flex items-center justify-evenly gap-8'>
         {/* Icon */}
         <div className=''>
-          <Image src={Logo} alt='Becky Gifts Logo' width={75} height='auto' className="rounded-full" />
+          <Image
+            src={Logo}
+            alt='Becky Gifts Logo'
+            width={100}
+            height='auto'
+            className='rounded-full -ml-10'
+          />
         </div>
         {/* links */}
         <div className='hidden space-x-6 md:flex'>
@@ -23,12 +30,14 @@ const Navbar = () => {
           ))}
         </div>
         {/* Button */}
-        <div className="justify-self-end">
-          <button className='px-6 py-2 text-amber-500 rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'>
-            Get Gifts{" "}
-          </button>
-        </div>
-        {/* Hamburger */}
+        <Link className='flex -mr-10' href='#'>
+          <span className='text-brightRed flex items-center relative w-6'>
+            <FaShoppingCart size='2.2rem' />
+            <span className='absolute -top-2 mt-1 -right-4 w-2 h-2 flex items-center justify-center rounded-full p-3 text-white bg-yellow-500 '>
+              0
+            </span>
+          </span>
+        </Link>
         <button
           id='menu-btn'
           className='block hamburger md:hidden focus:outline-none'
