@@ -7,11 +7,11 @@ const PopularProducts = () => {
       id='products'
       className='max-container max-sm:mt-12 '
     >
-      <div className='flex flex-col justify-start gap-5'>
-        <h2 className='text-4xl font-palanquin font-bold'>
+      <div className='flex flex-col justify-center gap-5'>
+        <h2 className='text-4xl font-palanquin font-bold text-center'>
           Our <span className='text-brightRed'> Popular </span> Products
         </h2>
-        <p className='lg:max-w-lg mt-2 font-montserrat text-slate-gray text-2xl'>
+        <p className=' mt-2 font-montserrat text-slate-gray text-2xl text-center'>
           Experience Nature's masterpieces, blooming with timeless grace. Each
           petal is a vibrant brushstroke of elegance, whispering joy and
           serenity.

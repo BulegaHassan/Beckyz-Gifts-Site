@@ -3,7 +3,7 @@ import ServicesCard from "./ServicesCard";
 
 const Services = () => {
   return (
-    <>
+    <div className='m-12'>
       <section>
         <h3 className='font-palanquin text-center text-4xl font-bold py-9'>
           Why 
@@ -11,12 +11,12 @@ const Services = () => {
         {' '}  Us?
         </h3>        
       </section>
-      <section className='max-container flex justify-center flex-wrap gap-9'>
+      <section className='max-container flex justify-center gap-6 sm:flex-wrap md:flex-nowrap'>
         {services.map((service) => (
           <ServicesCard key={service.label} {...service} />
         ))}
       </section>
-    </>
+    </div>
   );
 };
 export default Services;
