@@ -10,8 +10,8 @@ function ProductImage  ({ product, fill })  {
      <>
        {fill ? (
          <Image
-           src={product.image}
-           alt={product.name}
+           src={product?.image}
+           alt={product?.name}
            fill
            className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
              loading
@@ -22,8 +22,8 @@ function ProductImage  ({ product, fill })  {
          />
        ) : (
          <Image
-           src={product.image}
-           alt={product.name}
+           src={product?.image}
+           alt={product?.name}
            width={400}
            height={1000}
            className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${

@@ -13,7 +13,11 @@ import ProductImage from "./ProductImage";
 import Product from "./Product";
 import Contact from "./Contact";
 import Map from "./Map";
-
+import Filters from "./Filters";
+import Sort from "./Sort";
+import ListView from "./ListView";
+import GridView from "./GridView";
+import ProductList from "./ProductList";
 export {
   Navbar,
   Footer,
@@ -30,4 +34,9 @@ export {
   Contact,
   Aboutsection,
   AboutContent,
+  Filters,
+  Sort,
+  ListView,
+  GridView,
+  ProductList
 };

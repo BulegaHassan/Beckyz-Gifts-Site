@@ -177,3 +177,5 @@ export const services = [
     subtext: "Our dedicated team is here to assist you every step of the way.",
   },
 ];
+
+export const url = `https://gifts-shop-and-more-api.onrender.com/api/v1/gifts`;       

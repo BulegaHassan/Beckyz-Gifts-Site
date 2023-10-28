@@ -1,14 +1,14 @@
 import { Contact,Map } from "../components"
 const contactPage = () => {
   return (
-    <>
-    <section className="padding pt-0 mt-0">
+    <main className=''>
+    <section className="padding ">
       <Contact/>
     </section>
     <section className="">
       <Map/>
     </section>
-    </>
+    </main>
   )
 }
 export default contactPage
