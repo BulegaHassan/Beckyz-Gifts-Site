@@ -7,34 +7,23 @@ import { StarIcon } from "@heroicons/react/24/solid";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { formatPrice } from "@/app/constants/helpers";
+import { url } from "@/app/constants";
+import { useProductsContext } from "@/app/context/products_context";
+import Link from "next/link";
 
 function Modal() {
   let [isOpen, setIsOpen] = useState(true);
   const id = useParams().id;
-  const [product, setProduct] = useState();
-  const [loading, setLoading] = useState(false);
   const router = useRouter();
+  const {
+    single_product_loading: loading,
+    single_product_error: error,
+    single_product: product,
+    fetchSingleProduct,
+  } = useProductsContext();
 
   useEffect(() => {
-    async function fetchProduct() {
-      setLoading(true);
-      const res = await fetch(
-        `https://gifts-shop-and-more-api.onrender.com/api/v1/gifts/${id}`
-      );
-      // console.log("res", res);
-
-      let product = await res.json();
-      product = product.gift
-      console.log('pr', product);
-      console.log("pr-gift", product.gift);
-
-
-      setProduct(product);
-
-      setLoading(false);
-    }
-
-    fetchProduct();
+    fetchSingleProduct(`${url}/${id}`);
   }, [id]);
 
   return (
@@ -103,7 +92,7 @@ function Modal() {
                     <p className='line-clamp-5 text-sm'>
                       {product?.description}
                     </p>
-                    <div className='text-sm mt-36'>
+                    <div className='text-sm mt-24'>
                       <button
                         onClick={() => window.location.reload()}
                         className='px-6 py-2 text-amber-500 rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'
