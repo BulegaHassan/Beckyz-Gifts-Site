@@ -1,9 +1,24 @@
 "use client";
-import { products } from "../constants";
+import { useFilterContext } from "../context/filter_context";
+import { useProductsContext } from "../context/products_context";
 import { formatPrice, getUniqueValues } from "../constants/helpers";
 import { useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
-const Filters = ({ products }) => {
+const Filters = () => {
+  const {
+    filters: {
+      text,
+      category,
+      color,
+      min_price,
+      price,
+      max_price,
+    },
+    updateFilters,
+    clearFilters,
+    all_products,
+  } = useFilterContext();
+const {products} = useProductsContext()
   const categories = getUniqueValues(products, "category");
   const colors = getUniqueValues(products, "colors");
   console.log(categories, colors);
@@ -16,8 +31,10 @@ const Filters = ({ products }) => {
             <input
               type='text'
               name='text'
-              placeholder='search'
-              className='search-input'
+              placeholder='Search'
+              className='rounded text-grey-500 pl-3'
+              value={text}
+              onChange={updateFilters}
             />
           </div>
           {/* end search input  */}
@@ -29,9 +46,12 @@ const Filters = ({ products }) => {
                 return (
                   <button
                     key={index}
+                    onClick={updateFilters}
                     type='button'
                     name='category'
-                    className='all-btn'
+                    className={`${
+                      category === cat?.toLowerCase() ? "underline text-gray-800" : null
+                    }`}
                   >
                     {cat}
                   </button>
@@ -51,8 +71,13 @@ const Filters = ({ products }) => {
                     <button
                       key={index}
                       name='color'
+                      onClick={updateFilters}
                       data-color='all'
-                      className='all-btn'
+                      className={`${
+                        color === "all"
+                          ? "underline mr-2 text-gray-800"
+                          : "mr-2"
+                      }`}
                     >
                       all
                     </button>
@@ -63,9 +88,14 @@ const Filters = ({ products }) => {
                     key={index}
                     name='color'
                     style={{ background: col }}
+                    className={`${
+                      color === col ? "color-btn" : "color-btn"
+                    }`}
                     data-color={col}
-                    className={`${col ? "color-btn active" : "color-btn"} `}
-                  ></button>
+                    onClick={updateFilters}
+                  >
+                    {color === col ? <FaCheck className="text-black" /> : null}
+                  </button>
                 );
               })}
             </div>
@@ -74,12 +104,23 @@ const Filters = ({ products }) => {
           {/* price */}
           <div className='form-control'>
             <h5 className='font-bold capitalize'>price</h5>
-            <p className='price'>{formatPrice(products[0].price)}</p>
-            <input type='range' name='price' min='10000' max='1000000' />
+            <p className='price'>{formatPrice(price)}</p>
+            {/* <input type='range' name='price' min='10000' max='1000000' /> */}
+            <input
+              type='range'
+              name='price'
+              onChange={updateFilters}
+              min={min_price}
+              max={max_price}
+              value={price}
+            />
           </div>
           {/* end of price */}
         </form>
-        <button className='px-6 py-2 text-amber-500 rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none'>
+        <button
+          className='px-6 py-2 text-white  bg-brightRedLight '
+          onClick={clearFilters}
+        >
           Clear Filters{" "}
         </button>
       </div>
