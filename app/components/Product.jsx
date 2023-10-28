@@ -5,7 +5,7 @@ const Product = ({ product }) => {
   return (
     <Link
       href={`/gifts/${product.id}`}
-      className='h-96 flex flex-col p-5 rounded border border-red-500 group hover:scale-105 transition-transform ease-out duration-200'
+      className='h-96 flex flex-col p-5 rounded   group hover:scale-105 transition-transform ease-out duration-200'
     >
       <div className='relative max-h-72 flex-1'>
         <ProductImage product={product} fill />
