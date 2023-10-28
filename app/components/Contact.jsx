@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section className='bg-white  overflow-hidden relative z-10'>
+      <section className=' overflow-hidden relative z-10'>
         <div className="relative h-[400px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/154.jpg')]"></div>
         <div className='container px-6 md:px-12'>
           <div className='block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[200px] backdrop-blur-[30px]'>
@@ -11,7 +11,7 @@ const Contact = () => {
               <div className='flex flex-wrap -mx-4 lg:justify-between'>
                 <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
                   <div className='mb-12 max-w-[570px] lg:mb-0'>
-                    <span className='block mb-4 text-base font-semibold text-brightRed leading-1 text-lg'>
+                    <span className='block mb-4  font-semibold text-brightRed leading-1 text-lg'>
                       Contact Us
                     </span>
                     <h2 className='mb-6  font-bold uppercase text-dark  '>
