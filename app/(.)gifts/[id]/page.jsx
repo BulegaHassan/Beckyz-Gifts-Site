@@ -24,7 +24,7 @@ function Modal() {
 
   useEffect(() => {
     fetchSingleProduct(`${url}/${id}`);
-  }, [id]);
+  }, [url,id]);
 
   return (
     <Dialog

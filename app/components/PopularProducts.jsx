@@ -12,7 +12,7 @@ const PopularProducts = () => {
           Our <span className='text-brightRed'> Popular </span> Products
         </h2>
         <p className=' mt-2 font-montserrat text-slate-gray text-2xl text-center'>
-          Experience Nature's masterpieces, blooming with timeless grace. Each
+          Experience lovely masterpieces, blooming with timeless grace. Each
           petal is a vibrant brushstroke of elegance, whispering joy and
           serenity.
         </p>

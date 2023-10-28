@@ -73,7 +73,7 @@ const AboutContent = () => {
                 </div>
 
                 <p className='mb-0 text-neutral-500 dark:text-neutral-300'>
-                  Nestled in the heart of a picturesque town, Becky's Gift Haven
+                  Nestled in the heart of a picturesque town,  Gift and More 
                   traces its origins to early 2015 when its passionate owner,
                   Becky Nambuya, transformed a cozy nook into a haven of
                   heartfelt giving. With an unwavering commitment to spreading
@@ -81,7 +81,7 @@ const AboutContent = () => {
                   the soul. Over the years, this beloved shop has remained a
                   cherished destination for locals and travelers alike, a place
                   where thoughtful gifting transcends mere tradition and becomes
-                  an art form. Today, under Becky's expert guidance, it thrives
+                  an art form. Today, under  expert guidance, it thrives
                   as a testament to the enduring magic of giving from the heart.
                 </p>
               </div>
